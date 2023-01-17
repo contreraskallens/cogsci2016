@@ -139,7 +139,7 @@ pdf_document <- function(toc = FALSE,
     args <- c(args, pandoc_highlight_args(highlight))
 
     # latex engine
-    latex_engine = match.arg(latex_engine, c("pdflatex", "lualatex", "xelatex"))
+    latex_engine = "xelatex"
     args <- c(args, pandoc_latex_engine_args(latex_engine))
 
     # content includes
